@@ -64,7 +64,7 @@ module TDiary
 				r = replaced_r
 
 				# 2. Apply markdown conversion
-				r = CommonMarker::Rouge.render_html(r, [:DEFAULT, :UNSAFE], [:autolink, :table])
+				r = CommonMarker::Rouge.render_html(r, [:DEFAULT, :UNSAFE])#, [:autolink, :table])
 
 				# 3. Stash <pre> and <code> tags
 				pre_tag_stashes = []
