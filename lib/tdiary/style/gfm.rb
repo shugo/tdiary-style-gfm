@@ -97,7 +97,7 @@ module TDiary
 					end
 
 					# STAGE 3: Apply Twitter's autolinker for @mentions and lists.
-					r = Twitter::TwitterText::Autolink.auto_link_usernames_or_lists(r)
+					# r = Twitter::TwitterText::Autolink.auto_link_usernames_or_lists(r)
 
 					# STAGE 4: Restore protected YouTube links (as new <a> tags)
 					youtube_link_data_for_twitter_text_protection.each do |link_data|
